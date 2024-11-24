@@ -1,0 +1,107 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "palabra",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "PracticarIntent",
+          "samples": [
+            "Practicar {palabra}",
+            "Quiero practicar {palabra}",
+            "Ayúdame con {palabra}",
+            "Como se dice {palabra}",
+            "Enseñame a pronunciar {palabra}",
+            "Pronuncia {palabra} por sílabas",
+            "Dime como se dice {palabra}",
+            "Practiquemos {palabra}",
+            "Dame la palabra {palabra} por sílabas",
+            "Repitamos la palabra {palabra}",
+            "Explicame como se dice {palabra}",
+            "Como divides en sílabas {palabra}",
+            "Me ayudas a pronunciar {palabra}",
+            "Puedes ayudarme con {palabra}",
+            "Como dices {palabra} en voz alta",
+            "Practica conmigo {palabra}",
+            "Practiquemos juntos {palabra}",
+            "Repite por sílabas {palabra}",
+            "Divide en sílabas {palabra}",
+            "Repite lentamente {palabra}",
+            "Vamos a practicar {palabra}",
+            "Enséñame como decir {palabra}",
+            "Por favor practica conmigo {palabra}",
+            "Dime como se divide en sílabas {palabra}",
+            "Practiquemos como pronunciar {palabra}",
+            "Como se pronuncia {palabra}",
+            "Vamos a repetir {palabra}",
+            "Me enseñas a decir {palabra}",
+            "Enséñame paso a paso {palabra}",
+            "Como puedo decir {palabra} correctamente",
+            "Practiquemos la palabra {palabra}",
+            "Dime como separas en sílabas {palabra}",
+            "Muéstrame como decir {palabra}",
+            "Divide despacio {palabra}",
+            "Enséñame como dividir en sílabas {palabra}",
+            "Explícame como decir {palabra} correctamente",
+            "Puedes decir {palabra} por sílabas",
+            "Dame las sílabas de {palabra}",
+            "Ayúdame a aprender {palabra}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "respuesta",
+              "type": "YesNoType"
+            }
+          ],
+          "name": "ConfirmarPracticaIntent",
+          "samples": [
+            "{respuesta}",
+            "mi respuesta es {respuesta}",
+            "digo {respuesta}",
+            "quiero {respuesta}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "sí"
+              }
+            },
+            {
+              "name": {
+                "value": "no"
+              }
+            }
+          ],
+          "name": "YesNoType"
+        }
+      ],
+      "invocationName": "hablar bien"
+    }
+  }
+}
